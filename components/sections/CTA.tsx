@@ -96,13 +96,6 @@ export function CTA() {
                 Commencer l'essai gratuit
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/20 text-white hover:bg-white/10 backdrop-blur text-lg px-8"
-              >
-                Planifier une démo
-              </Button>
             </motion.div>
 
             <motion.div

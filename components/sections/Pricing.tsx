@@ -37,7 +37,7 @@ export function Pricing() {
       price: "19",
       period: "mois",
       description: "Économisez 120€ par an",
-      badge: "⭐ PRÉFÉRÉ",
+      badge: "Recommandé",
       features: [
         "Tout du plan mensuel",
         "Jusqu'à 300 élèves",

@@ -36,21 +36,21 @@ export function ProblemSolution() {
 
   const solutions = [
     {
-      title: "Centralisation totale",
+      title: "Simplifiez le travail de l'enseignant",
       description:
-        "Tous vos outils de gestion au même endroit : plannings, carnets, évaluations.",
+        "Devlup centralise la programmation, le suivi des élèves et automatise la communication. L’enseignant bénéficie d’un outil simple pour organiser, évaluer et partager les progrès de chacun. Une gestion claire, au service de l’apprentissage.",
       gradient: "orange",
     },
     {
-      title: "Communication automatisée",
+      title: "Impliquez les familles",
       description:
-        "Notifications instantanées aux parents. Ils suivent la progression en temps réel.",
+        "Avec Devlup, les parents suivent la progression de leur(s) enfant(s) en temps réel. Chaque étape devient une fierté partagée pour encore plus de motivation.",
       gradient: "aqua",
     },
     {
-      title: "Suivi personnalisé",
+      title: "Développez votre école de tennis",
       description:
-        "Carnets de compétences numériques avec historique complet pour chaque élève.",
+        "Proposez  un suivi moderne et faites de la progression un levier de croissance durable. Créez cette expérience unique qui fidélise et renforce l'attractivité de votre club.",
       gradient: "rose",
     },
   ];
@@ -105,7 +105,7 @@ export function ProblemSolution() {
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
           >
             Les défis du{" "}
-            <span className="text-foreground/60">tennis moderne</span>
+            <span className="text-accent">tennis moderne</span>
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -125,8 +125,8 @@ export function ProblemSolution() {
             <motion.div key={index} variants={itemVariants}>
               <Card className="p-6 bg-card/50 backdrop-blur-lg border border-white/10 hover:border-white/20 transition-all h-full">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-14 h-14 rounded-2xl bg-red-500/10 flex items-center justify-center mb-4">
-                    <problem.icon className="w-7 h-7 text-red-400" />
+                  <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-4">
+                    <problem.icon className="w-7 h-7 text-secondary" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">
                     {problem.title}
@@ -148,11 +148,11 @@ export function ProblemSolution() {
           className="text-center mb-16"
         >
           <div className="inline-flex items-center justify-center gap-3 bg-orange-gradient px-8 py-4 rounded-2xl">
-            <Sparkles className="w-6 h-6 text-white" />
+            <Sparkles className="w-6 h-6 text-primary" />
             <h3 className="text-2xl font-bold text-white">
               Devlup change la donne
             </h3>
-            <Sparkles className="w-6 h-6 text-white" />
+            <Sparkles className="w-6 h-6 text-primary" />
           </div>
         </motion.div>
 
@@ -172,7 +172,7 @@ export function ProblemSolution() {
                   <div
                     className={`w-16 h-16 rounded-2xl bg-${solution.gradient}-gradient flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
                   >
-                    <Sparkles className="w-8 h-8 text-white" />
+                    <Sparkles className="w-8 h-8 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-3">
                     {solution.title}

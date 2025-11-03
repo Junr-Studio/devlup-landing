@@ -42,48 +42,21 @@ export function Testimonials() {
 
   const testimonials = [
     {
-      name: "Thomas Dupont",
-      role: "Directeur",
-      club: "Tennis Club de Paris",
-      avatar: "/assets/3d/Homme 1/Homme(1)_pose(1).png",
+      name: "Frédéric S.",
+      role: "Enseignant",
+      club: "",
+      avatar: "/assets/testimonials/466339851_10160532353753193_6834438726367224855_n-150.webp",
       content:
-        "Devlup a complètement transformé notre façon d'enseigner. Les parents sont ravis de pouvoir suivre la progression de leurs enfants en temps réel. Notre taux de fidélisation a augmenté de 40% !",
-      rating: 4,
-    },
-    {
-      name: "Sophie Martin",
-      role: "Enseignante",
-      club: "Club de Tennis de Lyon",
-      avatar: "/assets/3d/Femme 2/Femme(2)_pose(1).png",
-      content:
-        "Je gagne un temps fou sur la gestion administrative. Les carnets de compétences numériques sont une vraie révolution. Je peux enfin me concentrer sur l'enseignement.",
+        "C'est vraiment top. Les parents sont rassurés. Les élèves sont motivés et ça m'aide beaucoup dans ma programmation",
       rating: 5,
     },
-    {
-      name: "Marc Lefebvre",
-      role: "Entraîneur principal",
-      club: "Tennis Academy Bordeaux",
-      avatar: "/assets/3d/Homme 2/Homme(2)_pose(1).png",
-      content:
-        "L'application est intuitive et complète. Mes élèves sont plus motivés grâce au système de niveaux. Les notifications automatiques pour les parents sont un vrai plus.",
-      rating: 4,
-    },
-    {
-      name: "Julie Bernard",
-      role: "Coordinatrice",
-      club: "Stade Français Tennis",
-      avatar: "/assets/3d/Femme 2/Femme(2)_pose(2).png",
-      content:
-        "Avec une équipe de 8 enseignants, la coordination était un cauchemar. Devlup a simplifié toute notre organisation. Le support client est excellent !",
-      rating: 5,
-    },
-    {
-      name: "Pierre Rousseau",
+        {
+      name: "Lionel T.",
       role: "Directeur sportif",
-      club: "Tennis Club Nice Côte d'Azur",
-      avatar: "/assets/3d/Homme 1/Homme(1)_pose(2).png",
+      club: "",
+      avatar: "/assets/testimonials/516646065_10233932923176706_6816134332292056157_n-150.webp",
       content:
-        "Notre club a doublé ses inscriptions depuis qu'on utilise Devlup. L'image moderne que ça donne à notre structure est incroyable. Les parents adorent !",
+        "Depuis que j'utilise Devlup, j'ai l'impression de faire mon travail beaucoup mieux et je gagne énormément de temps",
       rating: 5,
     },
   ];
