@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"TikTok Sans"', "sans-serif"],
+      },
       colors: {
         orange: {
           solid: "var(--orange-solid)",
