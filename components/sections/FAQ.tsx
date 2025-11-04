@@ -44,11 +44,6 @@ export function FAQ() {
         "Les fonctionnalités sont limitées mais vous gardez toutes vos données jusqu'à ce que vous décidiez de passer à l'abonnement mensuel ou annuel.",
     },
     {
-      question: "Les données sont-elles sécurisées ?",
-      answer:
-        "Totalement, les données sont hébergées en Europe dans le respect des règles RGPD.",
-    },
-    {
       question: "Puis-je intégrer un nombre d'élèves illimité ?",
       answer:
         "L'abonnement se limite à 300 élèves mais pour les grosses structures vous pouvez ajouter des élèves supplémentaires par tranche de 10 élèves pour un tarif de 9,50 € à l'année (soit 0,80 € / an pour 10 élèves supplémentaires).",

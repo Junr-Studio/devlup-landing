@@ -18,7 +18,7 @@ export function Hero() {
         colors={{
           first: '255,106,0',     // Orange
           second: '135,206,250',  // Aqua
-          third: '225,0,255',     // Rose
+          third: '225,0,255',     // Rose 
           fourth: '255,136,52',   // Orange light
           fifth: '192,225,245',   // Aqua light
           sixth: '234,77,255',    // Rose light

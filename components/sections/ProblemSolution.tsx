@@ -38,7 +38,7 @@ export function ProblemSolution() {
     {
       title: "Simplifiez le travail de l'enseignant",
       description:
-        "Devlup centralise la programmation, le suivi des élèves et automatise la communication. L'enseignant bénéficie d'un outil simple pour organiser, évaluer et partager les progrès de chacun. Une gestion claire, au service de l&apos;apprentissage.",
+        "Devlup centralise la programmation, le suivi des élèves et automatise la communication. L'enseignant bénéficie d'un outil simple pour organiser, évaluer et partager les progrès de chacun. Une gestion claire, au service de l'apprentissage.",
       gradient: "orange",
       image: "/assets/img/coach.webp",
     },
@@ -52,7 +52,7 @@ export function ProblemSolution() {
     {
       title: "Développez votre école de tennis",
       description:
-        "Proposez  un suivi moderne et faites de la progression un levier de croissance durable. Créez cette expérience unique qui fidélise et renforce l&apos;attractivité de votre club.",
+        "Proposez  un suivi moderne et faites de la progression un levier de croissance durable. Créez cette expérience unique qui fidélise et renforce l'attractivité de votre club.",
       gradient: "rose",
       image: "/assets/img/team.webp",
     },
