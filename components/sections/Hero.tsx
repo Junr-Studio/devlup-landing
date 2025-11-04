@@ -13,12 +13,12 @@ export function Hero() {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-bg-dark">
       {/* Animated Bubble Background */}
       <BubbleBackground
-        className="absolute inset-0 opacity-60"
+        className="hidden md:block absolute inset-0 opacity-60"
         interactive={false}
         colors={{
           first: '255,106,0',     // Orange
           second: '135,206,250',  // Aqua
-          third: '225,0,255',     // Rose 
+          third: '225,0,255',     // Rose
           fourth: '255,136,52',   // Orange light
           fifth: '192,225,245',   // Aqua light
           sixth: '234,77,255',    // Rose light
@@ -90,7 +90,7 @@ export function Hero() {
                   </span>
                   {/* Animated glow effect */}
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+                    className="hidden md:block absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
                     animate={{
                       x: ['-100%', '100%'],
                     }}
