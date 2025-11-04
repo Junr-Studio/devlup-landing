@@ -36,7 +36,7 @@ export function ProblemSolution() {
 
   const solutions = [
     {
-      title: "Simplifiez le travail de l&apos;enseignant",
+      title: "Simplifiez le travail de l'enseignant",
       description:
         "Devlup centralise la programmation, le suivi des élèves et automatise la communication. L'enseignant bénéficie d'un outil simple pour organiser, évaluer et partager les progrès de chacun. Une gestion claire, au service de l&apos;apprentissage.",
       gradient: "orange",
@@ -178,6 +178,7 @@ export function ProblemSolution() {
                       alt={solution.title}
                       width={96}
                       height={96}
+                      quality={90}
                       className="object-cover w-full h-full"
                     />
                   </div>

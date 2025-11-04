@@ -164,6 +164,7 @@ export function Testimonials() {
                                 alt={testimonial.name}
                                 width={60}
                                 height={60}
+                                quality={90}
                                 className="object-cover scale-150 translate-y-2"
                               />
                             </div>
@@ -227,6 +228,7 @@ export function Testimonials() {
                       alt={partner.alt}
                       width={280}
                       height={120}
+                      quality={90}
                       className="object-contain w-[200px] h-[85px] opacity-70 hover:opacity-100 transition-opacity"
                     />
                   </div>
@@ -251,6 +253,7 @@ export function Testimonials() {
                       alt={partner.alt}
                       width={280}
                       height={120}
+                      quality={90}
                       className="object-contain w-[200px] h-[85px] opacity-70 hover:opacity-100 transition-opacity"
                     />
                   </div>
