@@ -5,7 +5,18 @@ import { FaFacebookF, FaInstagram } from 'react-icons/fa6';
 export function Footer() {
   return (
     <footer className="bg-fg-dark border-t border-white/10">
-      <div className="container mx-auto px-4 lg:px-8 py-12">
+      <div className="container mx-auto px-4 lg:px-8 py-12 relative">
+        {/* 3D Character - Tennis player on right (mobile only) */}
+        <div className="md:hidden absolute -right-4 top-8 w-32 h-32 opacity-20 pointer-events-none">
+          <Image
+            src="/assets/3d/Femme 2/Femme(2)_pose(1).png"
+            alt="Tennis player"
+            width={150}
+            height={150}
+            className="object-contain"
+          />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo et description */}
           <div className="col-span-1 md:col-span-2">

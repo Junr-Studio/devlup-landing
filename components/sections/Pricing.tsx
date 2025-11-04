@@ -94,7 +94,7 @@ export function Pricing() {
         initial={{ opacity: 0, x: -100 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ delay: 0.6, duration: 0.8 }}
-        className="absolute -left-10 md:-left-5 top-1/4 w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 opacity-20 md:opacity-25 pointer-events-none"
+        className="hidden md:block absolute -left-10 md:-left-5 top-1/4 w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-96 lg:h-96 opacity-20 md:opacity-25 pointer-events-none"
       >
         <Image
           src="/assets/3d/Homme 1/Homme(1)_pose(3).png"
@@ -110,7 +110,7 @@ export function Pricing() {
         initial={{ opacity: 0, x: 100 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ delay: 0.7, duration: 0.8 }}
-        className="absolute -right-5 bottom-10 md:bottom-1/4 w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 opacity-15 md:opacity-20 pointer-events-none"
+        className="hidden md:block absolute -right-5 bottom-10 md:bottom-1/4 w-40 h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 opacity-15 md:opacity-20 pointer-events-none"
       >
         <Image
           src="/assets/3d/Femme 2/Femme(2)_pose(3).png"

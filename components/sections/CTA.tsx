@@ -21,7 +21,7 @@ export function CTA() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={inView ? { opacity: 1, scale: 1 } : {}}
         transition={{ delay: 0.5, duration: 0.8 }}
-        className="absolute -right-8 md:-right-10 top-1/2 -translate-y-1/2 w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 opacity-15 md:opacity-20 pointer-events-none"
+        className="hidden md:block absolute -right-8 md:-right-10 top-1/2 -translate-y-1/2 w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 opacity-15 md:opacity-20 pointer-events-none"
       >
         <Image
           src="/assets/3d/Homme 2/Homme(2)_pose(1).png"
