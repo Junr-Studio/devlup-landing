@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaFacebookF, FaInstagram } from 'react-icons/fa6';
 
 export function Footer() {
@@ -26,28 +27,28 @@ export function Footer() {
             <h3 className="text-foreground font-semibold mb-4">Produit</h3>
             <ul className="space-y-2">
               <li>
-                <a
+                <Link
                   href="/#fonctionnalites"
                   className="text-foreground/60 hover:text-foreground transition-colors text-sm"
                 >
                   Fonctionnalités
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/#tarifs"
                   className="text-foreground/60 hover:text-foreground transition-colors text-sm"
                 >
                   Tarifs
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/#temoignages"
                   className="text-foreground/60 hover:text-foreground transition-colors text-sm"
                 >
                   Témoignages
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

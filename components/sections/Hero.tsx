@@ -2,24 +2,28 @@
 
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Aurora } from "@/components/ui/Aurora";
 import { StoreButtons } from "@/components/ui/StoreButtons";
 import { motion } from "framer-motion";
-import { ArrowRight, Play, TrendingUp, Users, Star } from "lucide-react";
+import { ArrowRight, TrendingUp, Users, Star } from "lucide-react";
 import Image from "next/image";
+import { BubbleBackground } from "@/components/ui/BubbleBackground";
 
 export function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-bg-dark">
-      {/* Animated Aurora Background */}
-      <div className="absolute inset-0">
-        <Aurora
-          colorStops={["#FF6A00", "#87CEFA", "#E100FF"]}
-          blend={1.0}
-          amplitude={1.0}
-          speed={3.2}
-        />
-      </div>
+      {/* Animated Bubble Background */}
+      <BubbleBackground
+        className="absolute inset-0 opacity-60"
+        interactive={false}
+        colors={{
+          first: '255,106,0',     // Orange
+          second: '135,206,250',  // Aqua
+          third: '225,0,255',     // Rose
+          fourth: '255,136,52',   // Orange light
+          fifth: '192,225,245',   // Aqua light
+          sixth: '234,77,255',    // Rose light
+        }}
+      />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -142,23 +146,58 @@ export function Hero() {
             className="relative hidden lg:block"
           >
             <div className="relative">
-              {/* 3D Character with glassmorphism background */}
-              <div className="relative w-full aspect-square">
-                <div
-                  className="absolute inset-0 rounded-3xl backdrop-blur-xl border border-white/10 flex items-end justify-center overflow-hidden"
-                  style={{
-                    background: 'linear-gradient(45deg, #1B112C 30%, #1B112C 55%)'
-                  }}
+              {/* Stacked Phone Screenshots */}
+              <div className="relative w-full h-[600px] flex items-center justify-center rounded-3xl border border-foreground/30 backdrop-blur-sm p-8 bg-background/30">
+                {/* Phone Screenshots Stack - Fan effect on hover */}
+                <motion.div
+                  className="relative w-[300px] h-[600px] group"
+                  initial="closed"
+                  whileHover="open"
                 >
-                  <Image
-                    src="/assets/screenshots/captures-devlup--5--1pw1jn-750.webp"
-                    alt="Devlup App"
-                    width={600}
-                    height={600}
-                    className="object-contain scale-110"
-                    priority
-                  />
-                </div>
+                  {["screenshot (3).png", "screenshot (2).png", "screenshot.png"].map((filename, index) => {
+                    // Calculate fan positions
+                    const closedRotate = (index - 1) * 10;
+                    const closedX = (index - 1) * 100;
+                    const openRotate = (index - 1) * 25; // Éventail plus ouvert
+                    const openX = (index - 1) * 180; // Écartement horizontal augmenté
+
+                    return (
+                      <motion.div
+                        key={index}
+                        className="absolute inset-0 cursor-pointer"
+                        style={{
+                          zIndex: index,
+                        }}
+                        variants={{
+                          closed: {
+                            rotate: closedRotate,
+                            x: closedX,
+                            y: 0,
+                          },
+                          open: {
+                            rotate: openRotate,
+                            x: openX,
+                            y: -20,
+                          },
+                        }}
+                        transition={{
+                          type: "spring",
+                          stiffness: 300,
+                          damping: 25,
+                        }}
+                      >
+                        <Image
+                          src={`/assets/screenshots/${filename}`}
+                          alt={`Devlup App Screenshot ${index + 1}`}
+                          width={300}
+                          height={600}
+                          className="object-contain w-full h-full drop-shadow-2xl"
+                          priority={index === 0}
+                        />
+                      </motion.div>
+                    );
+                  })}
+                </motion.div>
               </div>
 
               {/* Floating cards */}

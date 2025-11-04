@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { StoreButtons } from "@/components/ui/StoreButtons";
 import { Menu, X } from "lucide-react";
@@ -14,7 +15,7 @@ export function Header() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <Image
               src="/assets/logo/Logo vecto1.svg"
               alt="Devlup"
@@ -23,33 +24,33 @@ export function Header() {
               className="h-10 w-auto"
             />
             <span className="text-2xl font-bold text-foreground">Devlup</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a
+            <Link
               href="/#fonctionnalites"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               Fonctionnalités
-            </a>
-            <a
+            </Link>
+            <Link
               href="/#tarifs"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               Tarifs
-            </a>
-            <a
+            </Link>
+            <Link
               href="/#temoignages"
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               Témoignages
-            </a>
+            </Link>
           </nav>
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button className="bg-orange-gradient hover:scale-105 transition-transform">
+            <Button className="bg-orange-gradient hover:scale-105 transition-transform cursor-pointer">
               Essai gratuit
             </Button>
             <StoreButtons size="sm" />
@@ -57,7 +58,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-foreground cursor-pointer"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -69,29 +70,29 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden py-6 border-t border-white/10">
             <nav className="flex flex-col gap-4">
-              <a
+              <Link
                 href="/#fonctionnalites"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Fonctionnalités
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#tarifs"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Tarifs
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/#temoignages"
                 className="text-foreground/80 hover:text-foreground transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Témoignages
-              </a>
+              </Link>
               <div className="flex flex-col gap-3 pt-4">
-                <Button className="bg-orange-gradient">
+                <Button className="bg-orange-gradient cursor-pointer">
                   Essai gratuit
                 </Button>
                 <StoreButtons size="md" className="justify-center pt-2" />

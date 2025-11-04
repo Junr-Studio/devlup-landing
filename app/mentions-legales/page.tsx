@@ -23,7 +23,7 @@ export default function MentionsLegalesPage() {
               className="mb-8 text-foreground/60 hover:text-background hover:bg-secondary"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Retour à l'accueil
+              Retour à l&apos;accueil
             </Button>
           </Link>
 
@@ -86,13 +86,13 @@ export default function MentionsLegalesPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-white mb-4">4. Propriété intellectuelle</h2>
               <p className="text-foreground/70 mb-4">
-                L'ensemble de ce site relève de la législation française et internationale sur le
-                droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont
+                L&apos;ensemble de ce site relève de la législation française et internationale sur le
+                droit d&apos;auteur et la propriété intellectuelle. Tous les droits de reproduction sont
                 réservés, y compris pour les documents téléchargeables et les représentations
                 iconographiques et photographiques.
               </p>
               <p className="text-foreground/70 mb-4">
-                La reproduction de tout ou partie de ce site sur un support électronique quel qu'il
+                La reproduction de tout ou partie de ce site sur un support électronique quel qu&apos;il
                 soit est formellement interdite sauf autorisation expresse du directeur de la
                 publication.
               </p>
@@ -101,8 +101,8 @@ export default function MentionsLegalesPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-white mb-4">5. Liens hypertextes</h2>
               <p className="text-foreground/70 mb-4">
-                Le site peut contenir des liens hypertextes vers d'autres sites. Devlup ne dispose
-                d'aucun moyen pour contrôler les contenus de ces sites et décline toute
+                Le site peut contenir des liens hypertextes vers d&apos;autres sites. Devlup ne dispose
+                d&apos;aucun moyen pour contrôler les contenus de ces sites et décline toute
                 responsabilité quant aux contenus de ces sites.
               </p>
             </section>
@@ -112,7 +112,7 @@ export default function MentionsLegalesPage() {
                 6. Données personnelles et cookies
               </h2>
               <p className="text-foreground/70 mb-4">
-                Pour en savoir plus sur la gestion de vos données personnelles et l'utilisation des
+                Pour en savoir plus sur la gestion de vos données personnelles et l&apos;utilisation des
                 cookies, consultez notre{" "}
                 <Link href="/confidentialite" className="text-orange-solid hover:underline">
                   Politique de Confidentialité
@@ -134,7 +134,7 @@ export default function MentionsLegalesPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold text-white mb-4">8. Contact</h2>
               <p className="text-foreground/70 mb-4">
-                Pour toute question ou demande d'information concernant le site, vous pouvez nous
+                Pour toute question ou demande d&apos;information concernant le site, vous pouvez nous
                 contacter :
               </p>
               <p className="text-foreground/70 mb-2">

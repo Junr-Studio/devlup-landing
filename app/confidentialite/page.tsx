@@ -23,7 +23,7 @@ export default function ConfidentialitePage() {
               className="mb-8 text-foreground/60 hover:text-background hover:bg-secondary"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Retour à l'accueil
+              Retour à l&apos;accueil
             </Button>
           </Link>
 
@@ -64,13 +64,13 @@ export default function ConfidentialitePage() {
               <p className="text-foreground/70 mb-4">Nous collectons les données suivantes :</p>
               <ul className="list-disc list-inside text-foreground/70 mb-4 space-y-2">
                 <li>
-                  <strong>Données d'identification :</strong> nom, prénom, adresse email
+                  <strong>Données d&apos;identification :</strong> nom, prénom, adresse email
                 </li>
                 <li>
                   <strong>Données de connexion :</strong> identifiants, mots de passe (chiffrés)
                 </li>
                 <li>
-                  <strong>Données d'utilisation :</strong> logs de connexion, actions effectuées
+                  <strong>Données d&apos;utilisation :</strong> logs de connexion, actions effectuées
                 </li>
                 <li>
                   <strong>Données pédagogiques :</strong> informations sur les élèves et leur
@@ -101,9 +101,9 @@ export default function ConfidentialitePage() {
                 Le traitement de vos données repose sur :
               </p>
               <ul className="list-disc list-inside text-foreground/70 mb-4 space-y-2">
-                <li>L'exécution du contrat vous liant à Devlup</li>
+                <li>L&apos;exécution du contrat vous liant à Devlup</li>
                 <li>Votre consentement pour certains traitements spécifiques</li>
-                <li>Notre intérêt légitime pour l'amélioration de nos services</li>
+                <li>Notre intérêt légitime pour l&apos;amélioration de nos services</li>
                 <li>Nos obligations légales</li>
               </ul>
             </section>
@@ -137,12 +137,12 @@ export default function ConfidentialitePage() {
                 Conformément au RGPD, vous disposez des droits suivants :
               </p>
               <ul className="list-disc list-inside text-foreground/70 mb-4 space-y-2">
-                <li>Droit d'accès à vos données</li>
+                <li>Droit d&apos;accès à vos données</li>
                 <li>Droit de rectification</li>
-                <li>Droit à l'effacement</li>
+                <li>Droit à l&apos;effacement</li>
                 <li>Droit à la limitation du traitement</li>
                 <li>Droit à la portabilité</li>
-                <li>Droit d'opposition</li>
+                <li>Droit d&apos;opposition</li>
                 <li>Droit de retirer votre consentement</li>
               </ul>
               <p className="text-foreground/70 mb-4">

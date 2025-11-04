@@ -4,7 +4,7 @@ import { Section } from "@/components/layout/Section";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Clock, MessageSquareOff, TrendingDown } from "lucide-react";
+import { Clock, MessageSquareOff, TrendingDown, Sparkles } from "lucide-react";
 import Image from "next/image";
 
 export function ProblemSolution() {
@@ -36,9 +36,9 @@ export function ProblemSolution() {
 
   const solutions = [
     {
-      title: "Simplifiez le travail de l'enseignant",
+      title: "Simplifiez le travail de l&apos;enseignant",
       description:
-        "Devlup centralise la programmation, le suivi des élèves et automatise la communication. L'enseignant bénéficie d'un outil simple pour organiser, évaluer et partager les progrès de chacun. Une gestion claire, au service de l'apprentissage.",
+        "Devlup centralise la programmation, le suivi des élèves et automatise la communication. L'enseignant bénéficie d'un outil simple pour organiser, évaluer et partager les progrès de chacun. Une gestion claire, au service de l&apos;apprentissage.",
       gradient: "orange",
       image: "/assets/img/coach.webp",
     },
@@ -52,7 +52,7 @@ export function ProblemSolution() {
     {
       title: "Développez votre école de tennis",
       description:
-        "Proposez  un suivi moderne et faites de la progression un levier de croissance durable. Créez cette expérience unique qui fidélise et renforce l'attractivité de votre club.",
+        "Proposez  un suivi moderne et faites de la progression un levier de croissance durable. Créez cette expérience unique qui fidélise et renforce l&apos;attractivité de votre club.",
       gradient: "rose",
       image: "/assets/img/team.webp",
     },
@@ -114,7 +114,7 @@ export function ProblemSolution() {
             variants={itemVariants}
             className="text-lg text-foreground/70 max-w-2xl mx-auto"
           >
-            Vous passez plus de temps à gérer qu'à enseigner ?
+            Vous passez plus de temps à gérer qu&apos;à enseigner ?
           </motion.p>
         </motion.div>
 

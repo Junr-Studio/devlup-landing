@@ -151,7 +151,7 @@ export function Testimonials() {
 
                         {/* Content */}
                         <p className="text-foreground/80 mb-6 flex-grow italic">
-                          "{testimonial.content}"
+                          &ldquo;{testimonial.content}&rdquo;
                         </p>
 
                         {/* Author */}

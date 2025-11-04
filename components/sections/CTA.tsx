@@ -92,9 +92,9 @@ export function CTA() {
             >
               <Button
                 size="lg"
-                className="bg-orange-gradient hover:scale-105 transition-all shadow-xl shadow-orange-solid/30 text-white font-semibold text-lg px-8 group"
+                className="bg-orange-gradient hover:scale-105 transition-all shadow-xl shadow-orange-solid/30 text-white font-semibold text-lg px-8 group cursor-pointer"
               >
-                Commencer l'essai gratuit
+                Commencer l&apos;essai gratuit
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
 

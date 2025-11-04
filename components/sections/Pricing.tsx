@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Check, Star } from "lucide-react";
+import { Check } from "lucide-react";
 import Image from "next/image";
 
 export function Pricing() {
@@ -135,7 +135,7 @@ export function Pricing() {
             </span>
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Choisissez la formule qui correspond à vos besoins. Tous les prix sont pour toute l'école de tennis et incluent l'accès gratuit pour les parents et élèves.
+            Choisissez la formule qui correspond à vos besoins. Tous les prix sont pour toute l&apos;école de tennis et incluent l&apos;accès gratuit pour les parents et élèves.
           </p>
         </motion.div>
 
@@ -209,7 +209,7 @@ export function Pricing() {
 
                 <Button
                   size="lg"
-                  className="w-full bg-transparent border-2 border-white/20 text-white font-semibold hover:scale-105 transition-all duration-300"
+                  className="w-full bg-transparent border-2 border-white/20 text-white font-semibold hover:scale-105 transition-all duration-300 cursor-pointer"
                   onMouseEnter={(e) => {
                     if (plan.popular) {
                       e.currentTarget.style.background = 'linear-gradient(to right, #FF6A00, #FF8834, #FF6A00)';
@@ -241,7 +241,7 @@ export function Pricing() {
           className="text-center mt-12 space-y-3"
         >
           <div className="text-foreground/50 text-xs max-w-3xl mx-auto space-y-1">
-            <p>*Limité à 300 élèves pour l'essai 1 mois et le plan mensuel</p>
+            <p>*Limité à 300 élèves pour l&apos;essai 1 mois et le plan mensuel</p>
             <p>*+0,95€/an/élève supplémentaire à partir de 300 pour le plan annuel</p>
           </div>
           <p className="text-foreground/60 text-sm pt-3">

@@ -116,8 +116,8 @@ export function Features() {
             </span>
           </h2>
           <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
-            Une suite complète d'outils pensée pour simplifier votre quotidien
-            et améliorer l'expérience de vos élèves.
+            Une suite complète d&apos;outils pensée pour simplifier votre quotidien
+            et améliorer l&apos;expérience de vos élèves.
           </p>
         </motion.div>
 
