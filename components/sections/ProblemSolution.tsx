@@ -176,9 +176,9 @@ export function ProblemSolution() {
                     <Image
                       src={solution.image}
                       alt={solution.title}
-                      width={96}
-                      height={96}
-                      quality={90}
+                      width={256}
+                      height={256}
+                      quality={95}
                       className="object-cover w-full h-full"
                     />
                   </div>

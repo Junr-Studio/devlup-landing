@@ -162,9 +162,9 @@ export function Testimonials() {
                               <Image
                                 src={testimonial.avatar}
                                 alt={testimonial.name}
-                                width={60}
-                                height={60}
-                                quality={90}
+                                width={150}
+                                height={150}
+                                quality={95}
                                 className="object-cover scale-150 translate-y-2"
                               />
                             </div>

@@ -189,8 +189,9 @@ export function Hero() {
                         <Image
                           src={`/assets/screenshots/${filename}`}
                           alt={`Devlup App Screenshot ${index + 1}`}
-                          width={300}
-                          height={600}
+                          width={600}
+                          height={1200}
+                          quality={95}
                           className="object-contain w-full h-full drop-shadow-2xl"
                           priority={index === 0}
                         />
