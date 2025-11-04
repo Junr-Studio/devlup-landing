@@ -27,7 +27,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#fonctionnalites"
+                  href="/#fonctionnalites"
                   className="text-foreground/60 hover:text-foreground transition-colors text-sm"
                 >
                   Fonctionnalités
@@ -35,7 +35,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#tarifs"
+                  href="/#tarifs"
                   className="text-foreground/60 hover:text-foreground transition-colors text-sm"
                 >
                   Tarifs
@@ -43,7 +43,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#temoignages"
+                  href="/#temoignages"
                   className="text-foreground/60 hover:text-foreground transition-colors text-sm"
                 >
                   Témoignages
@@ -106,22 +106,22 @@ export function Footer() {
           </p>
           <div className="flex gap-6">
             <a
-              href="#"
+              href="/mentions-legales"
               className="text-foreground/60 hover:text-foreground transition-colors text-sm"
             >
               Mentions légales
             </a>
             <a
-              href="#"
+              href="/confidentialite"
               className="text-foreground/60 hover:text-foreground transition-colors text-sm"
             >
               Politique de confidentialité
             </a>
             <a
-              href="#"
+              href="/cgu"
               className="text-foreground/60 hover:text-foreground transition-colors text-sm"
             >
-              CGU
+              CGU/CGV
             </a>
           </div>
         </div>

@@ -19,34 +19,39 @@ export function FAQ() {
 
   const faqs = [
     {
-      question: "Comment fonctionne l'essai gratuit ?",
+      question: "Est-ce facile à mettre en place ?",
       answer:
-        "L'essai gratuit vous donne accès à toutes les fonctionnalités de Devlup pendant 1 mois complet. Aucune carte de crédit n'est requise pour commencer. Vous pouvez créer vos carnets de compétences, ajouter vos élèves, et tester l'application en conditions réelles. À la fin de l'essai, vous décidez si vous souhaitez continuer avec un abonnement mensuel ou annuel.",
+        "Très facile, les enseignants peuvent commencer en quelques clics. L'intégration des familles se fait avec un simple email.",
     },
     {
-      question: "Puis-je personnaliser les carnets de compétences ?",
+      question: "L'application fonctionne-t-elle partout ?",
       answer:
-        "Absolument ! Devlup vous permet de créer des carnets de compétences 100% personnalisés selon votre méthode d'enseignement. Vous définissez vos propres compétences, critères d'évaluation, et niveaux de progression. Chaque carnet peut être adapté à différents groupes d'âge ou niveaux de jeu.",
+        "Oui, Devlup est accessible sur ordinateur, tablette et smartphone (IOS & Android).",
     },
     {
-      question: "Comment les parents accèdent-ils à l'application ?",
+      question: "Est-ce payant pour les parents et les élèves ?",
       answer:
-        "Lorsque vous ajoutez un élève, les parents reçoivent automatiquement une invitation par email. Ils créent leur compte gratuit en quelques secondes et accèdent immédiatement à l'espace dédié de leur enfant. Aucun coût additionnel pour eux, l'accès parent est toujours gratuit avec votre abonnement.",
+        "Non, les espaces parents et élèves sont 100% gratuits.",
     },
     {
-      question: "Quelle est la limite d'élèves ?",
+      question: "Les parents et les enfants doivent-ils télécharger l'application ?",
       answer:
-        "Tous nos plans vous permettent de gérer jusqu'à 300 élèves simultanément. Cette limite est largement suffisante pour la plupart des écoles de tennis. Si vous avez besoin de gérer plus d'élèves, contactez-nous pour discuter d'une solution personnalisée adaptée à votre structure.",
+        "L'application est disponible en version mobile et web. Vous pouvez l'utiliser sans la télécharger sur devlup.app",
     },
     {
-      question: "Puis-je changer de formule ?",
+      question: "Que se passe-t-il après la période d'essai ?",
       answer:
-        "Oui, vous pouvez passer d'un abonnement mensuel à annuel (ou inversement) à tout moment depuis votre espace de gestion. Si vous passez à l'abonnement annuel en cours de route, nous ajustons automatiquement le montant au prorata. Aucun frais de changement, c'est totalement flexible.",
+        "Les fonctionnalités sont limitées mais vous gardez toutes vos données jusqu'à ce que vous décidiez de passer à l'abonnement mensuel ou annuel.",
     },
     {
-      question: "Les données de mes élèves sont-elles sécurisées ?",
+      question: "Les données sont-elles sécurisées ?",
       answer:
-        "La sécurité des données est notre priorité absolue. Toutes les données sont chiffrées et hébergées sur des serveurs sécurisés en Europe (RGPD compliant). Vous restez propriétaire de vos données et pouvez les exporter à tout moment. Nous ne partageons jamais vos informations avec des tiers.",
+        "Totalement, les données sont hébergées en Europe dans le respect des règles RGPD.",
+    },
+    {
+      question: "Puis-je intégrer un nombre d'élèves illimité ?",
+      answer:
+        "L'abonnement se limite à 300 élèves mais pour les grosses structures vous pouvez ajouter des élèves supplémentaires par tranche de 10 élèves pour un tarif de 9,50 € à l'année (soit 0,80 € / an pour 10 élèves supplémentaires).",
     },
   ];
 

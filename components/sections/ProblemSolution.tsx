@@ -4,7 +4,7 @@ import { Section } from "@/components/layout/Section";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Clock, MessageSquareOff, TrendingDown, Sparkles } from "lucide-react";
+import { Clock, MessageSquareOff, TrendingDown } from "lucide-react";
 import Image from "next/image";
 
 export function ProblemSolution() {
@@ -38,20 +38,23 @@ export function ProblemSolution() {
     {
       title: "Simplifiez le travail de l'enseignant",
       description:
-        "Devlup centralise la programmation, le suivi des élèves et automatise la communication. L’enseignant bénéficie d’un outil simple pour organiser, évaluer et partager les progrès de chacun. Une gestion claire, au service de l’apprentissage.",
+        "Devlup centralise la programmation, le suivi des élèves et automatise la communication. L'enseignant bénéficie d'un outil simple pour organiser, évaluer et partager les progrès de chacun. Une gestion claire, au service de l'apprentissage.",
       gradient: "orange",
+      image: "/assets/img/coach.webp",
     },
     {
       title: "Impliquez les familles",
       description:
         "Avec Devlup, les parents suivent la progression de leur(s) enfant(s) en temps réel. Chaque étape devient une fierté partagée pour encore plus de motivation.",
       gradient: "aqua",
+      image: "/assets/img/family.webp",
     },
     {
       title: "Développez votre école de tennis",
       description:
         "Proposez  un suivi moderne et faites de la progression un levier de croissance durable. Créez cette expérience unique qui fidélise et renforce l'attractivité de votre club.",
       gradient: "rose",
+      image: "/assets/img/team.webp",
     },
   ];
 
@@ -169,10 +172,14 @@ export function ProblemSolution() {
                 className={`p-8 bg-card/50 backdrop-blur-lg border border-white/10 hover:border-${solution.gradient}-solid/50 transition-all h-full group hover:scale-105 hover:shadow-xl hover:shadow-${solution.gradient}-solid/20`}
               >
                 <div className="flex flex-col items-center text-center">
-                  <div
-                    className={`w-16 h-16 rounded-2xl bg-${solution.gradient}-gradient flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}
-                  >
-                    <Sparkles className="w-8 h-8 text-primary" />
+                  <div className="w-32 h-32 mb-6 group-hover:scale-110 transition-transform overflow-hidden rounded-full">
+                    <Image
+                      src={solution.image}
+                      alt={solution.title}
+                      width={96}
+                      height={96}
+                      className="object-cover w-full h-full"
+                    />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-3">
                     {solution.title}

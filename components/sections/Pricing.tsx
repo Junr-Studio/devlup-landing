@@ -135,8 +135,7 @@ export function Pricing() {
             </span>
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            Choisissez la formule qui correspond à vos besoins. Tous les plans
-            incluent l'accès gratuit pour les parents et élèves.
+            Choisissez la formule qui correspond à vos besoins. Tous les prix sont pour toute l'école de tennis et incluent l'accès gratuit pour les parents et élèves.
           </p>
         </motion.div>
 
@@ -180,14 +179,16 @@ export function Pricing() {
                   </p>
                   <div className="flex items-baseline justify-center gap-2">
                     <span className="text-5xl font-bold text-white">
-                      {plan.price}€
+                      {plan.price}€{plan.name !== "Annuel" && "*"}
                     </span>
                     <span className="text-foreground/60">/{plan.period}</span>
                   </div>
                   {plan.name === "Annuel" && (
-                    <p className="text-sm text-orange-solid mt-2 font-semibold">
-                      Facturé 228€ HT/an
-                    </p>
+                    <>
+                      <p className="text-sm text-orange-solid mt-2 font-semibold">
+                        Facturé 228€ HT/an*
+                      </p>
+                    </>
                   )}
                   {plan.name === "Mensuel" && (
                     <p className="text-sm text-foreground/40 mt-2">HT</p>
@@ -237,9 +238,13 @@ export function Pricing() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="text-center mt-12"
+          className="text-center mt-12 space-y-3"
         >
-          <p className="text-foreground/60 text-sm">
+          <div className="text-foreground/50 text-xs max-w-3xl mx-auto space-y-1">
+            <p>*Limité à 300 élèves pour l'essai 1 mois et le plan mensuel</p>
+            <p>*+0,95€/an/élève supplémentaire à partir de 300 pour le plan annuel</p>
+          </div>
+          <p className="text-foreground/60 text-sm pt-3">
             💳 Tous les plans HT • 🔒 Paiement sécurisé • 🔄 Résiliation simple
           </p>
         </motion.div>

@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Aurora } from "@/components/ui/Aurora";
+import { StoreButtons } from "@/components/ui/StoreButtons";
 import { motion } from "framer-motion";
 import { ArrowRight, Play, TrendingUp, Users, Star } from "lucide-react";
 import Image from "next/image";
@@ -72,29 +73,34 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 mb-12 justify-center lg:justify-start"
+              className="flex flex-col gap-6 mb-12"
             >
-              <Button
-                size="lg"
-                className="relative overflow-hidden bg-gradient-to-r from-orange-solid via-rose-solid to-orange-light hover:scale-110 transition-all duration-300 shadow-2xl shadow-orange-solid/50 text-white font-bold text-lg px-10 py-7 group border-2 border-orange-light/50 hover:border-orange-light hover:shadow-rose-solid/50"
-              >
-                <span className="relative z-10 flex items-center text-xl">
-                  Essayer gratuitement 1 mois
-                  <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform" size={24} />
-                </span>
-                {/* Animated glow effect */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
-                  animate={{
-                    x: ['-100%', '100%'],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: 'linear',
-                  }}
-                />
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button
+                  size="lg"
+                  className="relative overflow-hidden bg-gradient-to-r from-orange-solid via-rose-solid to-orange-light hover:scale-110 transition-all duration-300 shadow-2xl shadow-orange-solid/50 text-white font-bold text-lg px-10 py-7 group border-2 border-orange-light/50 hover:border-orange-light hover:shadow-rose-solid/50"
+                >
+                  <span className="relative z-10 flex items-center text-xl">
+                    Essayer gratuitement 1 mois
+                    <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform" size={24} />
+                  </span>
+                  {/* Animated glow effect */}
+                  <motion.div
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
+                    animate={{
+                      x: ['-100%', '100%'],
+                    }}
+                    transition={{
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: 'linear',
+                    }}
+                  />
+                </Button>
+              </div>
+
+              {/* Store Badges */}
+              <StoreButtons size="lg" className="justify-center lg:justify-start" />
             </motion.div>
 
             {/* Stats */}

@@ -2,6 +2,7 @@
 
 import { Section } from "@/components/layout/Section";
 import { Button } from "@/components/ui/button";
+import { StoreButtons } from "@/components/ui/StoreButtons";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { ArrowRight, Check } from "lucide-react";
@@ -87,7 +88,7 @@ export function CTA() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
+              className="flex flex-col gap-6 items-center mb-8"
             >
               <Button
                 size="lg"
@@ -96,6 +97,9 @@ export function CTA() {
                 Commencer l'essai gratuit
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
+
+              {/* Store Badges */}
+              <StoreButtons size="lg" className="justify-center" />
             </motion.div>
 
             <motion.div
