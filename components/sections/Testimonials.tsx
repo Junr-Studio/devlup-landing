@@ -50,13 +50,31 @@ export function Testimonials() {
         "C'est vraiment top. Les parents sont rassurés. Les élèves sont motivés et ça m'aide beaucoup dans ma programmation",
       rating: 5,
     },
-        {
+    {
       name: "Lionel T.",
       role: "Directeur sportif",
       club: "",
       avatar: "/assets/testimonials/516646065_10233932923176706_6816134332292056157_n-150.webp",
       content:
         "Depuis que j'utilise Devlup, j'ai l'impression de faire mon travail beaucoup mieux et je gagne énormément de temps",
+      rating: 5,
+    },
+    {
+      name: "Eric B.",
+      role: "Président",
+      club: "Tennis Club de l'Olympique",
+      avatar: "/assets/testimonials/461077400_3942392099416943_5177847284747638793_n-150.webp",
+      content:
+        "Les élèves et les parents sont très satisfaits. Je pense que cela va fortement aider à la fidélisation",
+      rating: 5,
+    },
+    {
+      name: "Kevin C.",
+      role: "Enseignant",
+      club: "TCMD",
+      avatar: "/assets/testimonials/541470235_10233981173405735_4628860775388669091_n-150.webp",
+      content:
+        "Très facile à prendre en main. Devlup va redonner un coup de boost à mon école de tennis",
       rating: 5,
     },
   ];
@@ -178,62 +196,63 @@ export function Testimonials() {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="mt-16"
+          className="mt-20"
         >
-          <p className="text-center text-foreground/60 mb-8 text-sm">
+          <p className="text-center text-foreground/60 mb-10 text-sm uppercase tracking-wider">
             Ils nous font confiance
           </p>
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden py-4">
             {/* Gradient overlays */}
-            <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-bg-dark to-transparent z-10" />
-            <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-bg-dark to-transparent z-10" />
+            <div className="absolute left-0 top-0 bottom-0 w-40 bg-gradient-to-r from-bg-dark to-transparent z-10 pointer-events-none" />
+            <div className="absolute right-0 top-0 bottom-0 w-40 bg-gradient-to-l from-bg-dark to-transparent z-10 pointer-events-none" />
 
             {/* Scrolling content */}
-            <div className="flex animate-marquee">
-              <div className="flex items-center gap-12 min-w-max px-6">
+            <div className="flex gap-10 animate-marquee">
+              {/* First set */}
+              <div className="flex items-center gap-10 shrink-0">
                 {[
-                  "Tennis Club de Paris",
-                  "Lyon Tennis Academy",
-                  "RC Strasbourg Tennis",
-                  "AS Monaco Tennis",
-                  "Stade Français",
-                  "Nice Côte d'Azur TC",
-                  "Bordeaux Tennis Club",
-                  "Racing Club France",
-                  "TC Boulogne-Billancourt",
-                  "Toulouse Tennis",
-                ].map((club, index) => (
+                  { src: "/assets/partners/tco.webp", alt: "Tennis Club de l'Olympique" },
+                  { src: "/assets/partners/koumac.webp", alt: "Tennis Club de Koumac" },
+                  { src: "/assets/partners/lnc.webp", alt: "Les Nouvelles Calédoniennes" },
+                  { src: "/assets/partners/fsltp.webp", alt: "FSLTP" },
+                  { src: "/assets/partners/tcrn.webp", alt: "Tennis Club Riviera Nord" },
+                  { src: "/assets/partners/a.webp", alt: "Partenaire" },
+                ].map((partner, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-center px-8 py-4 rounded-xl bg-card/20 backdrop-blur-sm border border-white/5 min-w-[200px]"
+                    className="flex items-center justify-center px-4 py-4 rounded-xl bg-white border border-white/10 min-w-[240px] h-28 transition-transform hover:scale-105"
                   >
-                    <span className="text-foreground/40 font-semibold whitespace-nowrap">
-                      {club}
-                    </span>
+                    <Image
+                      src={partner.src}
+                      alt={partner.alt}
+                      width={280}
+                      height={120}
+                      className="object-contain w-[200px] h-[85px] opacity-70 hover:opacity-100 transition-opacity"
+                    />
                   </div>
                 ))}
               </div>
               {/* Duplicate for seamless loop */}
-              <div className="flex items-center gap-12 min-w-max px-6" aria-hidden="true">
+              <div className="flex items-center gap-10 shrink-0" aria-hidden="true">
                 {[
-                  "Tennis Club de Paris",
-                  "Lyon Tennis Academy",
-                  "RC Strasbourg Tennis",
-                  "AS Monaco Tennis",
-                  "Stade Français",
-                  "Nice Côte d'Azur TC",
-                  "Bordeaux Tennis Club",
-                  "Racing Club France",
-                  "TC Boulogne-Billancourt",
-                  "Toulouse Tennis",
-                ].map((club, index) => (
+                  { src: "/assets/partners/tco.webp", alt: "Tennis Club de l'Olympique" },
+                  { src: "/assets/partners/koumac.webp", alt: "Tennis Club de Koumac" },
+                  { src: "/assets/partners/lnc.webp", alt: "Les Nouvelles Calédoniennes" },
+                  { src: "/assets/partners/fsltp.webp", alt: "FSLTP" },
+                  { src: "/assets/partners/tcrn.webp", alt: "Tennis Club Riviera Nord" },
+                  { src: "/assets/partners/a.webp", alt: "Partenaire" },
+                ].map((partner, index) => (
                   <div
                     key={`duplicate-${index}`}
-                    className="flex items-center justify-center px-8 py-4 rounded-xl bg-card/20 backdrop-blur-sm border border-white/5 min-w-[200px]"
+                    className="flex items-center justify-center px-4 py-4 rounded-xl bg-white border border-white/10 min-w-[240px] h-28 transition-transform hover:scale-105"
                   >
-                    <span className="text-foreground/40 font-semibold whitespace-nowrap">
-                      {club}
-                    </span>
+                    <Image
+                      src={partner.src}
+                      alt={partner.alt}
+                      width={280}
+                      height={120}
+                      className="object-contain w-[200px] h-[85px] opacity-70 hover:opacity-100 transition-opacity"
+                    />
                   </div>
                 ))}
               </div>

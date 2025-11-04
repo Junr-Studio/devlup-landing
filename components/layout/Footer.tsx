@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaFacebookF, FaInstagram } from 'react-icons/fa6';
 
 export function Footer() {
   return (
@@ -54,7 +55,30 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-foreground font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
+              {/* Réseaux sociaux */}
+              <li>
+                <div className="flex gap-3">
+                  <a
+                    href="https://www.instagram.com/devlup.nc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/60 hover:text-primary transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <FaInstagram className="w-6 h-6" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/devlup.nc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground/60 hover:text-primary transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <FaFacebookF className="w-5 h-5" />
+                  </a>
+                </div>
+              </li>
               <li>
                 <a
                   href="mailto:contact@devlup.fr"
