@@ -172,7 +172,7 @@ export function ProblemSolution() {
                 className={`p-8 bg-card/50 backdrop-blur-lg border border-white/10 hover:border-${solution.gradient}-solid/50 transition-all h-full group hover:scale-105 hover:shadow-xl hover:shadow-${solution.gradient}-solid/20`}
               >
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-32 h-32 mb-6 group-hover:scale-110 transition-transform overflow-hidden rounded-full">
+                  <div className="w-32 h-32 mb-6 group-hover:scale-110 transition-transform overflow-hidden">
                     <Image
                       src={solution.image}
                       alt={solution.title}

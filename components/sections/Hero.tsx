@@ -82,11 +82,11 @@ export function Hero() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button
                   size="lg"
-                  className="relative overflow-hidden bg-gradient-to-r from-orange-solid via-rose-solid to-orange-light hover:scale-110 transition-all duration-300 shadow-2xl shadow-orange-solid/50 text-white font-bold text-lg px-10 py-7 group border-2 border-orange-light/50 hover:border-orange-light hover:shadow-rose-solid/50"
+                  className="relative overflow-hidden bg-gradient-to-r from-orange-solid via-rose-solid to-orange-light hover:scale-105 lg:hover:scale-110 transition-all duration-300 shadow-2xl shadow-orange-solid/50 text-white font-bold text-base sm:text-lg lg:text-lg px-6 sm:px-10 py-5 sm:py-7 group border-2 border-orange-light/50 hover:border-orange-light hover:shadow-rose-solid/50"
                 >
-                  <span className="relative z-10 flex items-center text-xl">
+                  <span className="relative z-10 flex items-center text-lg sm:text-xl whitespace-nowrap">
                     Essayer gratuitement 1 mois
-                    <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform" size={24} />
+                    <ArrowRight className="ml-2 sm:ml-3 group-hover:translate-x-2 transition-transform flex-shrink-0" size={20} />
                   </span>
                   {/* Animated glow effect */}
                   <motion.div
